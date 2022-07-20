@@ -3,12 +3,19 @@ Console.WriteLine("What is your name?");
 string? name = Console.ReadLine();
 Console.WriteLine("What is your preferred greeting?");
 string? greeting = Console.ReadLine();
-if (name != "")
+if (greeting != "")
 {
-    Console.WriteLine($"{greeting}, {name}!");
+    if (name != "")
+    {
+        Console.WriteLine($"{greeting}, {name}!");
+    }
+    else
+    {
+        Console.WriteLine($"{greeting}, stranger!");
+    }
 }
 else
 {
-    Console.WriteLine($"{greeting}, stranger!");
+    Console.WriteLine("Please provide a greeting!");
 }
 
